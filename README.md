@@ -9,9 +9,9 @@ The purpose of this tool to streamline the integration of GitHub repository info
 - Aggregate projects that are interconnected or related.
 
 ## Requirements
-- Rust: make sure you have Rust and Cargo installed on your machine. To install it, visit the official [Rust website](https://www.rust-lang.org/learn/get-started) and follow the instructions.
-- GitHub Personal Access Token (PAT): required to be able to get your repositories.
-- MongoDB: make sure MongoDB is installed on your machine. [Here](https://www.mongodb.com/try) you can follow the instructions to install it.
+- **Rust**: make sure you have Rust and Cargo installed on your machine. To install it, visit the official [Rust website](https://www.rust-lang.org/learn/get-started) and follow the instructions.
+- **GitHub Personal Access Token (PAT)**: required to be able to get your repositories.
+- **MongoDB**: make sure MongoDB is installed on your machine. [Here](https://www.mongodb.com/try) you can follow the instructions to install it.
 
 ## Installation
 1. Clone the repository:
@@ -34,7 +34,7 @@ This tool is designed to selectively synchronize your GitHub repositories with a
 If your goal is to include all your projects, you have two options:
 
 - Fork this tool and modify the code to suit your preferences.
-- Set the branch name in the `.env` file to main, which typically represents the default branch in many projects.
+- Set the branch name in the `.env` file to `main`, which typically represents the default branch in many projects.
 
 The project naming convention is designed to transform repository names into more readable titles. For instance, a repository named `my-calculator_frontend` will be converted to "My Calculator". This transformation is handled automatically by scripts within the tool, streamlining the process for ease of use. Should you require a different naming scheme, the scripts can be adjusted to meet your specific needs.
 
