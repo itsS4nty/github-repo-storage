@@ -28,12 +28,12 @@ cd github-repo-storage
 Create an `.env` file in the project's root directory and follow the structure of the [.env.example](.env.example).
 
 ## How it works
-This tool is designed to selectively synchronize your GitHub repositories with a database, based on specific criteria defined in your environment settings. Through the use of a .env configuration, you can specify a branch name (e.g., `FEATURE_BRANCH`). Only repositories containing this branch will be integrated into the database. This functionality allows for precise control over which projects are included, accommodating scenarios where you might not wish to synchronize all your GitHub projects.
+This tool is designed to selectively synchronize your GitHub repositories with a database, based on specific criteria defined in your environment settings. Through the use of a `.env` configuration, you can specify a branch name (e.g., `FEATURE_BRANCH`). Only repositories containing this branch will be integrated into the database. This functionality allows for precise control over which projects are included, accommodating scenarios where you might not wish to synchronize all your GitHub projects.
 
 If your goal is to include all your projects, you have two options:
 
 - Fork this tool and modify the code to suit your preferences.
-- Set the branch name in the .env file to main, which typically represents the default branch in many projects.
+- Set the branch name in the `.env` file to main, which typically represents the default branch in many projects.
 
 The project naming convention is designed to transform repository names into more readable titles. For instance, a repository named `my-calculator_frontend` will be converted to "My Calculator". This transformation is handled automatically by scripts within the tool, streamlining the process for ease of use. Should you require a different naming scheme, the scripts can be adjusted to meet your specific needs.
 
