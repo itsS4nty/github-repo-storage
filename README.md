@@ -9,8 +9,9 @@ The purpose of this tool to streamline the integration of GitHub repository info
 - Aggregate projects that are interconnected or related.
 
 ## Requirements
-- Rust: make sure you have Rust and Cargo installed on your machine.
+- Rust: make sure you have Rust and Cargo installed on your machine. To install it, visit the official [Rust website](https://www.rust-lang.org/learn/get-started) and follow the instructions.
 - GitHub Personal Access Token (PAT): required to be able to get your repositories.
+- MongoDB: make sure MongoDB is installed on your machine. [Here](https://www.mongodb.com/try) you can follow the instructions to install it.
 
 ## Installation
 1. Clone the repository:
