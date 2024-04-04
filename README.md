@@ -16,8 +16,8 @@ The purpose of this tool to streamline the integration of GitHub repository info
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/itsS4nty/github-repo-info-aggregator.git
-cd github-repo-info-aggregator
+git clone https://github.com/itsS4nty/github-repo-storage.git
+cd github-repo-storage
 ```
 
 2. Create your GitHub Personal Access Token (PAT):
