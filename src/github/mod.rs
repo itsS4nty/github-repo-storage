@@ -1,7 +1,7 @@
-use crate::models::RepositoryInfo;
+use crate::client::build_headers;
 use reqwest::Client;
-use serde_json::Value;
-use std::{error::Error, collections::HashMap};
+use serde_json::{Value, Map};
+use std::error::Error;
 
 pub async fn get_user_repos(client: &Client, token: &str, user_login: &str) -> Result<Vec<Value>, Box<dyn Error>> {
     let url = format!("https://api.github.com/user/repos?sort=updated&per_page=100");
