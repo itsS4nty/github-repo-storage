@@ -24,7 +24,7 @@ async fn delete_repos(repositories_coll: Collection<CombinedRepositoryInfo>) -> 
 
 pub async fn insert_repos(repos: Vec<CombinedRepositoryInfo>) -> Result<(), Box<dyn Error>> {
     let client = get_client().await?;
-    let repositories_coll = client.database("s4nty-web").collection("repositories");
+    let repositories_coll = client.database("portfolio").collection("repositories");
 
     delete_repos(repositories_coll.clone()).await?;
     
